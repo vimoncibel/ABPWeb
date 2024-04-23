@@ -1,0 +1,56 @@
+nav{
+    background-color: #F5F1EC;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 100%;
+}
+.navbar-collapse{
+    background-color: #F5F1EC; /* Warna latar belakang untuk bagian collapsible (yang muncul saat toggler diklik) */
+}
+.navbar-brand{
+    width: 15%;
+}
+body{
+    background-color: #F5F1EC;
+}
+
+.Pic1Home >img{
+    width: 300px;
+    height: 300px;
+}
+
+.Pic1Home {
+    display: flex;
+    justify-content: center;
+}
+
+/* Remove padding from container */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Center content in main-section */
+.main-section .container {
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.contentOS{
+    margin-top: 5%;
+}
+
+.register.btn{
+    background-color: #6C7E46; /* Ubah warna tombol saat dihover */
+    border-radius: 10px;
+}
+
+h2{
+    color:#6C7E46;
+}
