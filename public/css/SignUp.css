@@ -1,0 +1,33 @@
+body{
+    background-color: #F5F1EC;
+}
+
+.picSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: -10%;
+}
+
+.JudulSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #6C7E46;
+}
+
+h5{
+    color: #909090;
+}
+
+.form-group >input{
+    border-radius: 10px;
+}
+
+.register.btn{
+    width: 100%; /* Membuat tombol mengisi lebar form */
+    background-color: #6C7E46; /* Ubah warna tombol saat dihover */
+    border-radius: 10px;
+}
