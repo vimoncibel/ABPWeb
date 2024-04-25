@@ -91,24 +91,88 @@
                     <div class="row">
                         <div class="col">
                             <div class="card">
-                                <a>Klean Bowl</a>
+                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a  style="margin-bottom: 1rem;">Klean Bowl</a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a>Capcay Vegetable</a>
+                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 1rem;">Capcay Vegetable</a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a>Veg Platter</a>
+                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 1rem;">Veg Platter</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="contentOS container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a  style="margin-bottom: 1rem;">Klean Bowl</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 1rem;">Capcay Vegetable</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 1rem;">Veg Platter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentOS container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a  style="margin-bottom: 2rem;">Klean Bowl</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 2rem;">Capcay Vegetable</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
+                                <a style="margin-bottom: 2rem;">Veg Platter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
 
 </body>
 </html>

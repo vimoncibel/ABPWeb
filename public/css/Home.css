@@ -54,3 +54,31 @@ h1{
 h2{
     color:#6C7E46;
 }
+
+.card {
+    display: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    margin-top: 5%;
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.card::after {
+    content: ""; /* Membuat pseudo-elemen */
+    position: absolute; /* Mengatur posisi absolut */
+    top: 0; /* Menempatkan di bagian atas card */
+    right: -0; /* Menempatkan di bagian kanan card */
+    width: 30px; /* Lebar gambar love */
+    height: 30px; /* Tinggi gambar love */
+    background-image: url("/image/love.png"); /* URL gambar love */
+    background-size: cover; /* Menyesuaikan ukuran gambar */
+}
+
+
