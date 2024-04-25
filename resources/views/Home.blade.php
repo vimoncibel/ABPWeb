@@ -44,9 +44,9 @@
                         Calculate your calorie consumption quickly and accurately, and find recipes that suit you! Start Your Journey Towards a Better Healthy Life with MealMate Now!
                     </p>
                 </div>
-                <div class="Pic1Home d-flex flex-column align-items-center col-md-6 py-5 col-sm-12">
+                <div class="Pic1Home d-flex flex-column align-items-end col-md-6 py-5 col-sm-12 ">
                     <img src="/image/Pic1Home.png" class="img-fluid"/>
-                    <button id="Explore Menu"  class="register btn btn-primary mt-3">Explore Menu</button>
+                    <button id="Explore Menu"  class="register btn btn-primary mt-3  ">Explore Menu</button>
                 </div>
             </div>
         </div>

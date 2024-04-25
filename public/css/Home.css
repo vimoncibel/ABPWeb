@@ -79,6 +79,16 @@ h2{
     height: 30px; /* Tinggi gambar love */
     background-image: url("/image/love.png"); /* URL gambar love */
     background-size: cover; /* Menyesuaikan ukuran gambar */
+    margin-top: 15px; /* Memberikan jarak dari atas */
+    margin-right: 15px
 }
+
+#ExploreMenu {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
 
 
