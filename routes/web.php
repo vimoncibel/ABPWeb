@@ -29,5 +29,9 @@ Route::get('/Home', function () {
     return view('Home');
 });
 
+Route::get('/Recipes', function () {
+    return view('Recipes');
+});
+
 
 
