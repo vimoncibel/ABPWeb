@@ -83,16 +83,32 @@
                 </div>
             </div>
             <div class="col-sm-9 Main mt-5 px-5">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" >
                 <div class="row g-0">
-                    <div class="col-md-4 m">
+                    <div class="col-md-4 image">
                         <img src="image/cardRecipes1.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Chicken Salad</h5>
+                            <div class="recipe-info">
+                                <div class="recipe-info-left">
+                                    <span>Calories:</span>
+                                    <span>Ingredients:</span>
+                                    <span>Servings:</span>
+                                    <span>Prep Time:</span>
+                                </div>
+                                <div>
+                                    <span>209</span></br>
+                                    <span>11</span></br>
+                                    <span>6</span></br>
+                                    <span>25 mins</span></br>
+                                </div>
+                            </div>
+                            <span>Vegan</span></br>
+                            <span>Breakfast</span></br>
+
+                            <button id="View" type="" class="register btn btn-primary">View</button>
                         </div>
                     </div>
                 </div>

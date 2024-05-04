@@ -23,3 +23,40 @@ body{
     border-left: 3px solid #dadadc; /* Menambahkan garis antara SideBar dan Main */
     padding-left: 15px; /* Memberikan ruang agar shadow tidak terlalu dekat dengan konten */
 }
+
+.image >img{
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.recipe-info span {
+    font-size: 14px;
+}
+.recipe-ingredients {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.recipe-info-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.register.btn{
+    background-color: #6C7E46; /* Ubah warna tombol saat dihover */
+    border-radius: 10px;
+    justify-content: flex-end;
+}
