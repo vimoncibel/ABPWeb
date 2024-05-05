@@ -90,29 +90,95 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Chicken Salad</h5>
+                            <h5 class="card-title"><strong>Chicken Salad</strong></h5>
                             <div class="recipe-info">
-                                <div class="recipe-info-left">
-                                    <span>Calories:</span>
-                                    <span>Ingredients:</span>
-                                    <span>Servings:</span>
-                                    <span>Prep Time:</span>
+                                <div class="col">
+                                    <span>Calories</span></br>
+                                    <span>Ingredients</span></br>
+                                    <span>Servings</span></br>
+                                    <span>Prep Time</span></br>
+                                    <span>Meal</span></br>
+                                    <span>Health</span></br>
                                 </div>
-                                <div>
-                                    <span>209</span></br>
-                                    <span>11</span></br>
-                                    <span>6</span></br>
-                                    <span>25 mins</span></br>
+                                <div class="col">
+                                    <span id="Calories">209</span></br>
+                                    <span id="Ingredients">11</span></br>
+                                    <span id="Servings">6</span></br>
+                                    <span id="Prep Time">25 mins</span></br>
+                                    <span id="Meal">Vegan</span></br>
+                                    <span id="Meal">Breakfast</span></br></br>                                     
                                 </div>
                             </div>
-                            <span>Vegan</span></br>
-                            <span>Breakfast</span></br>
-
-                            <button id="View" type="" class="register btn btn-primary">View</button>
+                            <button id="View" type="" class="btn btn-primary ml-auto d-flex justify-content-between">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="card mb-3" >
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="image/cardRecipes1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Chicken Salad</strong></h5>
+                            <div class="recipe-info">
+                                <div class="col">
+                                    <span>Calories</span></br>
+                                    <span>Ingredients</span></br>
+                                    <span>Servings</span></br>
+                                    <span>Prep Time</span></br>
+                                    <span>Meal</span></br>
+                                    <span>Health</span></br>
+                                </div>
+                                <div class="col">
+                                    <span id="Calories">209</span></br>
+                                    <span id="Ingredients">11</span></br>
+                                    <span id="Servings">6</span></br>
+                                    <span id="Prep Time">25 mins</span></br>
+                                    <span id="Meal">Vegan</span></br>
+                                    <span id="Meal">Breakfast</span></br></br>                                     
+                                </div>
+                            </div>
+                            <button id="View" type="" class="btn btn-primary ml-auto d-flex justify-content-between">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" >
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="image/cardRecipes1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Chicken Salad</strong></h5>
+                            <div class="recipe-info">
+                                <div class="col">
+                                    <span>Calories</span></br>
+                                    <span>Ingredients</span></br>
+                                    <span>Servings</span></br>
+                                    <span>Prep Time</span></br>
+                                    <span>Meal</span></br>
+                                    <span>Health</span></br>
+                                </div>
+                                <div class="col">
+                                    <span id="Calories">209</span></br>
+                                    <span id="Ingredients">11</span></br>
+                                    <span id="Servings">6</span></br>
+                                    <span id="Prep Time">25 mins</span></br>
+                                    <span id="Meal">Vegan</span></br>
+                                    <span id="Meal">Breakfast</span></br></br>                                     
+                                </div>
+                            </div>
+                            <button id="View" type="" class="btn btn-primary ml-auto d-flex justify-content-between">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             </div>
         </div>
     </div>

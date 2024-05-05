@@ -26,10 +26,10 @@ body{
 
 .image >img{
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-bottom: 10%;
-    max-width: 150px;
-    height: 150px;
+    max-width: 200px;
+    height: 200px;
     border-radius: 20px;
 }
 
@@ -55,8 +55,7 @@ body{
     flex-direction: column;
 }
 
-.register.btn{
+.btn{
     background-color: #6C7E46; /* Ubah warna tombol saat dihover */
     border-radius: 10px;
-    justify-content: flex-end;
 }
