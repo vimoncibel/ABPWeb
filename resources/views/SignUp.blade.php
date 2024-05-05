@@ -45,7 +45,11 @@
                                     <!-- Ganti input dengan elemen span -->
                                     <input id="ConfirmPassword" type="text" class="form-control" placeholder="Confirm Password"/>
                                 </div> <br>
-                                <button id="Register" type="submit" class="register btn btn-primary">Register</button>
+                                <button id="Register" type="submit" class="register btn btn-primary">Register</button></br></br>
+
+                                <center>
+                                <span>Already have an account ? </span>
+                                <span><a href="Login" class="link-succes link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Login</a></span>
                             </form>
                         </div>
                     </div>

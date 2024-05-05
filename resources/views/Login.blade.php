@@ -35,7 +35,11 @@
                                     <!-- Ganti input dengan elemen span -->
                                     <input id="Password" type="text" class="form-control" placeholder="Password"/>
                                 </div> <br>
-                                <button id="Login" type="submit" class="register btn btn-primary">Login</button>
+                                <button id="Login" type="submit" class="register btn btn-primary">Login</button></br></br>
+
+                                <center>
+                                <span>Don't have an account ? </span>
+                                <span><a href="SignUp" class="link-succes link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Register</a></span>
                             </form>
                         </div>
                     </div>
