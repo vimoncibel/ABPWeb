@@ -181,5 +181,57 @@ hr {
     border-top: 2px solid
 }
 
+/* modal logout */
+.modal-dialog {
+    max-width: 500px; /* Atur lebar maksimum modal */
+    border-radius: 10px;
+}
 
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header img {
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.modal-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center; /* Pusatkan teks pada badan modal */
+}
+
+.modal-footer {
+    border-top: none; /* Hapus garis atas pada footer modal */
+    justify-content: center; /* Pusatkan tombol pada footer modal */
+}
+
+.modal-footer button {
+    width: 25%; /* Atur lebar tombol footer */
+    border-radius: 10px;
+}
+
+.btn-cancle {
+    background-color: #D12D2D; /* Warna latar belakang untuk tombol cancel */
+    color: #fff; /* Warna teks pada tombol cancel */
+}
+
+.btn-logout {
+    background-color: #48AA33; /* Warna latar belakang untuk tombol logout */
+    color: #fff; /* Warna teks pada tombol logout */
+}
+
+.btn-close {
+    color: #6c757d; /* Warna ikon tombol close */
+}
+
+.btn-close:hover {
+    color: #343a40; /* Warna ikon tombol close saat hover */
+}
 
