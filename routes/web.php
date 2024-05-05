@@ -34,5 +34,14 @@ Route::get('/Recipes', function () {
     return view('Recipes');
 });
 
+Route::get('/Profil', function () {
+    return view('Profil');
+});
 
+Route::get('/EditProfile', function () {
+    return view('EditProfile');
+});
 
+Route::get('/MyRecipe', function () {
+    return view('MyRecipe');
+});
