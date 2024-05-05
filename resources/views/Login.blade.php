@@ -24,18 +24,19 @@
                             <h1 class="JudulSignUp py-5 mt-5"><strong>Login account</strong></h1>
 
                             <h5>Welcome!</h5><br>
-                            <form>
+                            <form method="POST" action="{{ route('login.submit') }}">
+                                @csrf
                                 <div class="form-group">
-                                    <label for="Email">Email</label>
+                                    <label for="email">Email</label>
                                     <!-- Ganti input dengan elemen span -->
-                                    <input id="Email" type="text" class="form-control" placeholder="Email" />
+                                    <input id="email" type="text" class="form-control" name="email" required autocomplete="email" autofocus/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Password">Password</label>
+                                    <label for="password">Password</label>
                                     <!-- Ganti input dengan elemen span -->
-                                    <input id="Password" type="text" class="form-control" placeholder="Password"/>
+                                    <input id="password" type="text" class="form-control" name="password" required autocomplete="current-password"/>
                                 </div> <br>
-                                <button id="Login" type="submit" class="register btn btn-primary">Login</button></br></br>
+                                <button id="login" type="submit" class="register btn btn-primary">Login</button></br></br>
 
                                 <center>
                                 <span>Don't have an account ? </span>

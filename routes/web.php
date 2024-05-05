@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +48,31 @@ Route::get('/EditProfile', function () {
 Route::get('/MyRecipe', function () {
     return view('MyRecipe');
 });
+
+Route::get('/login', function () {
+    // Check if user is already authenticated
+    if (Auth::check()) {
+        return redirect('/Home');
+    }
+    return view('login');
+})->name('login');
+
+Route::post('/login', function (Request $request) {
+    $credentials = $request->only('email', 'password');
+
+    // Cek apakah email dan password cocok dengan data di database
+    if (Auth::attempt($credentials)) {
+        // Autentikasi berhasil, arahkan ke halaman produk
+        return redirect('/Home');
+    } else {
+        // Autentikasi gagal, kembali ke halaman login dengan pesan error
+        return redirect('/login')->with('error', 'Email atau password salah');
+    }
+})->name('login.submit');
+
+
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect('login');
+});
+
