@@ -11,6 +11,7 @@
 
 </head>
 <body>   
+    <!-- Section Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light px-5">
             <img class="navbar-brand" src="/image/brand.png" alt="Brand Image">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,11 +31,48 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
                     </li>
+                    <!-- Baru Ditambahin -->
+                    <li class="nav-item">
+                        <!-- Dropdown dengan ikon profil -->
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/image/picProfil.png" alt="Profile Icon"> <!-- Ganti picProfil.png dengan gambar ikon profil Anda -->
+                                <span id="profileText">Hi, <span id="usernamePlaceholder">Alicia</span></span>
+                            </a>
+                            <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <!-- Isi dropdown menu dengan gambar ikon -->
+                                <a class="dropdown-item" href="My Account">
+                                    <img src="/image/picMyAcc.png" alt="My Account Icon"> My Account
+                                </a>
+                                <a class="dropdown-item" href="My Recipe">
+                                    <img src="/image/picMyRecipe.png" alt="My Recipe Icon"> My Recipe
+                                </a>
+                                <a class="dropdown-item" href="Log Out">
+                                    <img src="/image/picLogOut.png" alt="Log Out Icon"> Log Out
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            // Mendapatkan nama pengguna dari data yang telah disimpan saat registrasi
+                            var username = localStorage.getItem("username"); // Anda harus mengatur "username" setelah proses registrasi
+                        
+                            // Memperbarui teks nama pengguna di profil jika nama pengguna tersedia
+                            if (username) {
+                                var usernamePlaceholder = document.getElementById("usernamePlaceholder");
+                                usernamePlaceholder.textContent = username;
+                            }
+                        });
+                    </script>
+                    <!-- Baru Ditambahin sampai sini-->
                 </ul>
             </div>
     </nav>
+    <!-- End Section Navbar -->
 
-    <!--HERO SECTION-->
+    <!-- Section Opening-->
     <div class="main-section justify-content-center">
         <div class="container">
             <div class="row ">
@@ -51,9 +89,9 @@
             </div>
         </div>
     </div><br>
+    <!-- End Section Opening-->
 
-    <!--Our Services-->
-
+    <!-- Section Our Services-->
     <div class="container">
         <div class="row">
             <div class="col text-center mt-5">
@@ -78,9 +116,9 @@
             </div>
         </div>
     </div><br><br><br>
+    <!--End Section Our Services-->
 
-    <!--Popular Food-->
-
+    <!-- Section Popular Food-->
     <div class="container">
         <div class="row">
             <div class="col text-center mt-5">
@@ -155,22 +193,73 @@
                         </div>
                     </div>
                 </div><br>
-
             </div>
         </div>
     </div>
+    <!--End Section Popular Food-->
 
+    <!-- Section Footer-->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="">
-
+        <div class="container-fluid mt-5" style="background-color: #6C7E46; padding: 20px;">
+                <div class="row mb-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="footer-text">
+                            <div class="brandFooter">
+                                <img src="/image/logoFooter.png" alt="Brand" style="width: 40%;">
+                            </div>
+                                <div class="captionfooter mt-3">
+                                    <p class="card-text" style="margin: 0; line-height: 1.2; color: white;">Unlock a World of Wellness: </p>
+                                    <p class="card-text" style="margin: 0; line-height: 1.2; color: white;">Explore Our Bounty of Nutritious Recipes,</p>
+                                    <p class="card-text" style="margin: 0; line-height: 1.2; color: white;">Crafting Health and Flavor in Every Bite</p>
+                                </div>
+                            <div class="social mt-2 mb-3"> 
+                                <i class="fa fa-instagram fa-lg"></i> 
+                                <i class="fa fa-twitter fa-lg"></i> 
+                                <i class="fa fa-linkedin-square fa-lg"></i> 
+                                <i class="fa fa-facebook"></i> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4"></div>
+                    
+                    <div class="Feature col-md-2 col-sm-2 col-xs-2 mt-4">
+                        <h5 class="heading">Feature</h5>
+                        <ul class="card-text">
+                            <li>Recipes</li>
+                            <li>Create Your Recipe</li>
+                        </ul>
+                    </div>
+                    <div class="Company col-md-2 col-sm-2 col-xs-2 mt-4">
+                        <h5 class="heading">Company</h5>
+                        <ul class="card-text">
+                            <li>About Us</li>
+                            <li>Contact</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+
+                <div class="divider mb-4"> </div>
+                
+                <div class="row" style="font-size:10px; margin-left: 30px;">
+                    <div class="col-md-4 col-sm-4 col-xs-4"  style="color: white;">
+                        <div class="pull-left">
+                            <p><i class="fa fa-copyright"></i> 2024 thezpdesign</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4"></div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="pull-right mr-4 d-flex policy" style="color: white;">
+                            <div>Terms of Use</div>
+                            <div>Privacy Policy</div>
+                            <div>Cookie Policy</div>
+                        </div>
+                    </div>
+                </div>
+        </div>            
     </footer>
+    <!-- End Section Footer-->
 
     
 

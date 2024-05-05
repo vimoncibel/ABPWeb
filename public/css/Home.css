@@ -91,4 +91,95 @@ h2{
 }
 
 
+/* Dari sini baru */
+/* Gaya CSS untuk dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Gaya CSS untuk teks "Hi, nama pengguna" */
+#profileText {
+    color: #6C7E46; /* Warna yang diinginkan */
+}
+
+
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul>li {
+    padding: 4px;
+    color:#ffffff;
+}
+
+ul>li:hover {
+    color: #8dab4d;
+    cursor: pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.footer-text {
+    padding: 2% 7%
+}
+
+.social>i {
+    padding: 5%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #6C7E46;
+    cursor: pointer
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.divider {
+    border-top: 2px solid
+}
+
+
 
