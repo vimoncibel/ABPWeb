@@ -47,9 +47,31 @@
                                 <a class="dropdown-item" href="My Recipe">
                                     <img src="/image/picMyRecipe.png" alt="My Recipe Icon"> My Recipe
                                 </a>
-                                <a class="dropdown-item" href="Log Out">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <img src="/image/picLogOut.png" alt="Log Out Icon"> Log Out
                                 </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Log Out</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Apakah Anda yakin ingin keluar?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                                <a href="logout.php" class="btn btn-primary">Ya, Log Out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Section Modal -->
                             </div>
                         </div>
                     </li>
