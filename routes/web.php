@@ -16,6 +16,33 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/Home', function () {
+        return view('Home');
+    });
+
+    Route::get('/Recipes', function () {
+        return view('Recipes');
+    });
+
+    Route::get('/Profil', function () {
+        return view('Profil');
+    });
+
+    Route::get('/EditProfile', function () {
+        return view('EditProfile');
+    });
+
+    Route::get('/MyRecipe', function () {
+        return view('MyRecipe');
+    });
+
+    Route::get('/logout', function () {
+        Auth::logout();
+        return redirect('login');
+    });
+});
+
 Route::get('/', function () {
     return view('LandingPage');
 });
@@ -26,27 +53,6 @@ Route::get('/SignUp', function () {
 
 Route::get('/Login', function () {
     return view('Login');
-});
-
-Route::get('/Home', function () {
-    return view('Home');
-});
-
-
-Route::get('/Recipes', function () {
-    return view('Recipes');
-});
-
-Route::get('/Profil', function () {
-    return view('Profil');
-});
-
-Route::get('/EditProfile', function () {
-    return view('EditProfile');
-});
-
-Route::get('/MyRecipe', function () {
-    return view('MyRecipe');
 });
 
 Route::get('/login', function () {
@@ -69,10 +75,4 @@ Route::post('/login', function (Request $request) {
         return redirect('/login')->with('error', 'Email atau password salah');
     }
 })->name('login.submit');
-
-
-Route::get('/logout', function () {
-    Auth::logout();
-    return redirect('login');
-});
 
