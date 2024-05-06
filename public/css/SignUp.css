@@ -38,3 +38,28 @@ h5{
     background-color: #98b367; /* Ubah warna tombol saat dihover */
     transition: background-color 0.3s ease; /* Menambahkan efek transisi */
 }
+
+.invalid-feedback {
+    color: #dc3545; /* Warna teks untuk pesan kesalahan */
+    font-size: 14px; /* Ukuran font untuk pesan kesalahan */
+    margin-top: 5px; /* Jarak antara input field dan pesan kesalahan */
+}
+
+.form-group {
+    position: relative; /* Mengatur posisi relatif untuk bisa menempatkan pesan kesalahan */
+}
+
+/* Untuk memperjelas bahwa input field memiliki kesalahan */
+.form-control.is-invalid {
+    border-color: #dc3545; /* Warna border untuk input field yang memiliki kesalahan */
+}
+
+/* Menyembunyikan border bottom dari input field saat tidak ada kesalahan */
+.form-control {
+    border-bottom: none; /* Menghilangkan border bottom */
+}
+
+/* Menambahkan border bottom saat input field memiliki kesalahan */
+.form-control.is-invalid {
+    border-bottom: 2px solid #dc3545; /* Warna border untuk input field yang memiliki kesalahan */
+}

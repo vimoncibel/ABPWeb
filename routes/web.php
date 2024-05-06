@@ -68,7 +68,7 @@ Route::get('/login', function () {
     if (Auth::check()) {
         return redirect('/Home');
     }
-    return view('login');
+    return view('Login');
 })->name('login');
 
 Route::post('/login', function (Request $request) {
@@ -84,3 +84,5 @@ Route::post('/login', function (Request $request) {
     }
 })->name('login.submit');
 
+
+Route::post('/signup', [AuthController::class, 'register'])->name('register.submit');
