@@ -30,4 +30,11 @@ h5{
     width: 100%; /* Membuat tombol mengisi lebar form */
     background-color: #6C7E46; /* Ubah warna tombol saat dihover */
     border-radius: 10px;
+    outline: none;
+    color: white;
+}
+
+.register.btn:hover {
+    background-color: #98b367; /* Ubah warna tombol saat dihover */
+    transition: background-color 0.3s ease; /* Menambahkan efek transisi */
 }

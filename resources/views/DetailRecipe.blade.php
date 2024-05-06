@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equid="X-UA_Compatible" content="ie=edge">
@@ -14,11 +12,11 @@
 
     <!-- Tautan ke Bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/Home.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/DetailRecipe.css">
 
 </head>
-<body>   
+<body>  
     <!-- Section Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light px-5">
             <img class="navbar-brand" src="/image/brand.png" alt="Brand Image">
@@ -28,12 +26,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="Home">HOME</a>
+                        <a class="nav-link" href="Home">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
@@ -112,131 +110,102 @@
     </nav>
     <!-- End Section Navbar -->
 
-    <!-- Section Opening-->
-    <div class="main-section justify-content-center">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-6 tagline py-5 col-sm-12">
-                    <h1><strong>Discover Your <br> Health Secret  with <br>MealMate!</strong></h1><br>
-                    <p>
-                        Calculate your calorie consumption quickly and accurately, and find recipes that suit you! Start Your Journey Towards a Better Healthy Life with MealMate Now!
-                    </p>
-                </div>
-                <div class="Pic1Home d-flex flex-column align-items-end col-md-6 py-5 col-sm-12 ">
-                    <img src="/image/Pic1Home.png" class="img-fluid"/>
-                    <button id="Explore Menu"  class="register btn mt-3  ">Explore Menu</button>
-                </div>
-            </div>
-        </div>
-    </div><br>
-    <!-- End Section Opening-->
 
-    <!-- Section Our Services-->
+    <!-- Section direktori-->
     <div class="container">
         <div class="row">
-            <div class="col text-center mt-5">
-                <h2><strong>Our Services</strong></h2>
-
-                <div class="contentOS container">
-                    <div class="row">
-                        <div class="col">
-                            <img src="/image/picChildLP1.png" alt="picChild1 Landing Page" style="max-width: 110px; margin-bottom: 1rem;"> <br>
-                            <a class="desOS" style="color:black;">Access a variety of healthy recipes. Easily create nutritious and delicious meals at home</a>
-                        </div>
-                        <div class="col">
-                            <img src="/image/picChildLP2.png" alt="picChild2 Landing Page" style="max-width: 110px; height: auto; margin-bottom: 1rem;"> <br>
-                            <a class="desOS" style="color:black;">Monitor your caloric intake quickly and accurately. Achieve your health goals more effectively</a>
-                        </div>
-                        <div class="col">
-                            <img src="/image/picChildLP3.png" alt="picChild3 Landing Page" style="max-width: 90px; height: auto; margin-bottom: 2rem;"> <br>
-                            <a class="desOS" style="color:black; margin-top:-1rem;">Create a healthy menu according to your preferences. Choose your favorite ingredients and adjust their nutritional proportions with ease.</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><br><br><br>
-    <!--End Section Our Services-->
-
-    <!-- Section Popular Food-->
-    <div class="container">
-        <div class="row">
-            <div class="col text-center mt-5">
-                <h2><strong>Popular Food</strong></h2><br>
-                <p>We provide various food recipes with high taste with ratings to see popular food recipes. To see food recipes, go to the "Recipes" menu.</p>
-
-                <div class="contentOS container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a  style="margin-bottom: 1rem;">Klean Bowl</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 1rem;">Capcay Vegetable</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 1rem;">Veg Platter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contentOS container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a  style="margin-bottom: 1rem;">Klean Bowl</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 1rem;">Capcay Vegetable</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 1rem;">Veg Platter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contentOS container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict1.png" alt="PFPict1" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a  style="margin-bottom: 2rem;">Klean Bowl</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict2.png" alt="PFPict2" style="max-width: 90px; height: auto; margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 2rem;">Capcay Vegetable</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/image/PFPict3.png" alt="PFPict3" style="max-width: 90px; height: auto;  margin-bottom: -1rem;"> <br>
-                                <a style="margin-bottom: 2rem;">Veg Platter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
+            <div class="col">
+                <span class="directory-text">Home / Recipes / Detail Recipe</span>
             </div>
         </div>
     </div>
-    <!--End Section Popular Food-->
+    <!-- End Section direktori-->
+
+    <!-- Section Detail Recipe-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="imgRecipe">
+                    <img src="/image/cardRecipes1.png" alt=""> 
+                </div>
+                <div class="recipe-details">
+                    <p class="recipe-name">Chicken Salad</p>
+                    <p class="recipe-type">Vegan</p>
+                    <p class="recipe-type">Breakfast</p>
+                    <p class="recipe-serving">3-4 Porsi</p>
+                    <p class="recipe-time">1 hour 30 minute</p>
+                    <p class="recipe-author">Sintia Dwi | 23 April 2024</p>
+                    <button type="button" class="like btn" id="likeButton" onclick="handleLike()">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span class="like-count" id="likeCount">0 Likes</span>
+                    </button>
+                    
+                </div>
+            </div> 
+            <div class="col-8">
+                <div class="recipe-info-detail">
+                    <h3><strong class="Ingridients">Ingredients</strong></h3>
+                    <div class="recipe-box">
+                            <li>2 Boneless, skinless chicken breasts</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>1 Tablespoon olive oil</li>
+                            <li>4 Cups mixed salad greens</li>
+                            <li>1 Cup cherry tomatoes, halved</li>
+                            <li>1 Cucumber, sliced</li>
+                            <li>1/4 Cup red onion, thinly sliced</li>
+                            <li>1/2 Cup shredded carrots</li>
+                            <li>1/4 Cup sliced almonds (optional)</li>
+                            <li>1/4 Cup dried cranberries (optional)</li> </br>
+                        <p>For the dressing:</p>
+                            <li>1/4 cup plain Greek yogurt</li>
+                            <li>2 tablespoons mayonnaise</li>
+                            <li>1 tablespoon lemon juice</li>
+                            <li>1 teaspoon Dijon mustard</li>
+                            <li>1 clove garlic, minced</li>
+                            <li>Salt and pepper to taste</li>
+                    </div> </br>
+                    <h3><strong>Instructions</strong></h3>
+                    <ol class="instructions-box"> </br>
+                        <li>Season the chicken breasts with salt and pepper on both sides.</li>
+                        <li>Heat olive oil in a skillet over medium-high heat. Add the chicken breasts and cook until golden brown and cooked through, about 6-7 minutes per side. Remove from heat and let cool slightly.</li>
+                        <li>Once cooled, dice the chicken into bite-sized pieces.</li>
+                        <li>In a large bowl, combine the mixed salad greens, cherry tomatoes, cucumber, red onion, shredded carrots, sliced almonds, and dried cranberries (if using).</li>
+                        <li>In a separate small bowl, whisk together the Greek yogurt, mayonnaise, lemon juice, Dijon mustard, minced garlic, salt, and pepper to make the dressing.</li>
+                        <li>Pour the dressing over the salad ingredients and toss until everything is evenly coated.</li>
+                        <li>Add the diced chicken to the salad and gently toss to combine.</li>
+                        <li>Serve immediately, or refrigerate for up to 2 hours before serving for flavors to meld.</li>
+                        <li>Enjoy your delicious Chicken Salad!</li></br>
+                    </ol>
+                </div> </br>
+                <button type="button" class="btn btn-done">Done</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Section Detail Recipe-->
+
+    <!--Section Script count like-->
+    <script>
+    function handleLike() {
+        var button = document.getElementById("likeButton");
+        button.classList.toggle("active");
+        
+        // Mengubah teks tombol dan warna berdasarkan status tombol
+        if (button.classList.contains("active")) {
+            button.style.backgroundColor = "#48AA33"; // Tombol menjadi hijau saat aktif
+            button.style.borderColor = "#48AA33";
+        } else {
+            button.style.backgroundColor = "#a8ada7"; // Tombol menjadi warna asal saat tidak aktif
+            button.style.borderColor = "#bebfc0";
+        }
+        
+        // Mengatur jumlah like
+        var likeCount = document.getElementById("likeCount");
+        var count = parseInt(likeCount.innerText);
+        count = button.classList.contains("active") ? count + 1 : count - 1;
+        likeCount.innerText = count + " Likes";
+    }
+    </script>
+    <!--End Section Script count like-->
 
     <!-- Section Footer-->
     <footer>

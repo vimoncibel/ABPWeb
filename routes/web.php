@@ -37,6 +37,14 @@ Route::middleware(['auth'])->group(function () {
         return view('MyRecipe');
     });
 
+    Route::get('/UploadRecipe', function () {
+        return view('UploadRecipe');
+    });
+
+    Route::get('/DetailRecipe', function () {
+        return view('DetailRecipe');
+    });
+
     Route::get('/logout', function () {
         Auth::logout();
         return redirect('login');
@@ -72,7 +80,7 @@ Route::post('/login', function (Request $request) {
         return redirect('/Home');
     } else {
         // Autentikasi gagal, kembali ke halaman login dengan pesan error
-        return redirect('/login')->with('error', 'Email atau password salah');
+        return redirect('/login')->with('error', 'Email or password incorrect');
     }
 })->name('login.submit');
 

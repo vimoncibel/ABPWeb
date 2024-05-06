@@ -10,24 +10,13 @@ nav{
 .navbar-brand{
     width: 15%;
 }
-body{
-    background-color: #F5F1EC;
-}
-
-.Pic1Home >img{
-    width: 300px;
-    height: 300px;
-}
-
-.Pic1Home {
-    display: flex;
-    justify-content: center;
-}
 
 /* Remove padding from container */
 .container {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 4%;
 }
 
 /* Center content in main-section */
@@ -36,57 +25,6 @@ body{
     justify-content: center;
 }
 
-h1{
-    font-size: 50px;
-    line-height: 1.5;
-    letter-spacing: 2px;
-}
-
-.contentOS{
-    margin-top: 5%;
-}
-
-.register.btn{
-    background-color: #6C7E46; /* Ubah warna tombol saat dihover */
-    border-radius: 10px;
-    margin-right: 15%;
-    outline: none;
-    color: white;
-}
-
-.register.btn:hover {
-    background-color: #98b367; /* Ubah warna tombol saat dihover */
-    transition: background-color 0.3s ease; /* Menambahkan efek transisi */
-}
-
-h2{
-    color:#6C7E46;
-}
-
-.card {
-    display: relative;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.card img {
-    margin-top: 5%;
-    max-width: 90px;
-    height: auto;
-    margin-bottom: 2rem;
-}
-
-#ExploreMenu {
-    position: absolute;
-    bottom: 0;
-    left: 75%;
-    transform: translateX(-50%);
-}
-
-
-/* Dari sini baru */
 /* Gaya CSS untuk dropdown */
 .dropdown {
     position: relative;
@@ -121,8 +59,6 @@ h2{
 #profileText {
     color: #6C7E46; /* Warna yang diinginkan */
 }
-
-
 
 /* Footer */
 
@@ -176,7 +112,7 @@ hr {
     border-top: 2px solid
 }
 
-/* modal logout */
+/* */
 .modal-dialog {
     max-width: 500px; /* Atur lebar maksimum modal */
     border-radius: 10px;
@@ -229,4 +165,52 @@ hr {
 .btn-close:hover {
     color: #343a40; /* Warna ikon tombol close saat hover */
 }
+
+body{
+    background-color: #F5F1EC;
+}
+
+
+/* CSS untuk bodynya*/
+.form-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    width: flex;
+}
+
+#recipeTitle::placeholder,
+#recipeServings::placeholder,
+#recipePrepTime::placeholder,
+#recipeCalories::placeholder,
+#ingredientCount::placeholder,
+#ingredients::placeholder,
+#instruction::placeholder {
+    color: #6c757d; /* Warna teks placeholder */
+}
+
+.imgUpRecipe img {
+    width: 10%;
+}
+
+.btn-done {
+    background-color: #6C7E46; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks pada tombol */
+    border: none; /* Hapus border */
+    border-radius: 10px; /* Radius sudut tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    font-size: 16px; /* Ukuran teks */
+    cursor: pointer; /* Tampilan kursor saat mengarah ke tombol */
+    transition: background-color 0.3s ease; /* Transisi perubahan warna latar belakang */
+    float: right; /* Menggunakan float untuk memposisikan ke kanan */
+    margin-right: 23.5%;
+}
+
+.btn-done:hover {
+    background-color: #98b367; /* Warna latar belakang tombol saat hover */
+}
+
 

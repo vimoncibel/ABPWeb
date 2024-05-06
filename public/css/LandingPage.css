@@ -27,3 +27,10 @@ main {
 }
 
 
+.navbar-nav .nav-link:hover {
+    color: #6C7E46; /* Ubah warna teks saat dihover */
+    font-weight: bold; /* Membuat teks menjadi bold saat dihover */
+    text-decoration: underline; /* Menambahkan underline pada teks saat dihover */
+}
+
+

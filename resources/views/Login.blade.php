@@ -35,17 +35,24 @@
                                     <label for="password">Password</label>
                                     <!-- Ganti input dengan elemen span -->
                                     <input id="password" type="text" class="form-control" name="password" required autocomplete="current-password"/>
-                                </div> <br>
-                                <button id="login" type="submit" class="register btn btn-primary">Login</button></br></br>
+                                </div> 
+                                <br>
+                                <button id="login" type="submit" class="register btn">Login</button></br></br>
 
                                 <center>
                                 <span>Don't have an account ? </span>
                                 <span><a href="SignUp" class="link-succes link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Register</a></span>
                             </form>
+                            @if(session('error'))
+                                <div id="errorMessage" class="error-message" style="background-color: rgba(255, 0, 0, 0.2); padding: 10px; border-radius: 10px;">
+                                    <strong style="color: red;">{{ session('error') }}</strong>
+                                    <br>
+                                    Please check your email or password again.
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
