@@ -1,0 +1,241 @@
+nav{
+    background-color: #F5F1EC;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 100%;
+}
+.navbar-collapse{
+    background-color: #F5F1EC; /* Warna latar belakang untuk bagian collapsible (yang muncul saat toggler diklik) */
+}
+.navbar-brand{
+    width: 15%;
+}
+body{
+    background-color: #F5F1EC;
+}
+
+.Pic1Home >img{
+    width: 300px;
+    height: 300px;
+}
+
+.Pic1Home {
+    display: flex;
+    justify-content: center;
+}
+
+/* modal logout */
+.modal-dialog {
+    max-width: 500px; /* Atur lebar maksimum modal */
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header img {
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.modal-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center; /* Pusatkan teks pada badan modal */
+}
+
+.modal-footer {
+    border-top: none; /* Hapus garis atas pada footer modal */
+    justify-content: center; /* Pusatkan tombol pada footer modal */
+}
+
+.modal-footer button {
+    width: 25%; /* Atur lebar tombol footer */
+    border-radius: 10px;
+}
+
+.btn-cancle {
+    background-color: #D12D2D; /* Warna latar belakang untuk tombol cancel */
+    color: #fff; /* Warna teks pada tombol cancel */
+}
+
+.btn-logout {
+    background-color: #48AA33; /* Warna latar belakang untuk tombol logout */
+    color: #fff; /* Warna teks pada tombol logout */
+}
+
+.btn-close {
+    color: #6c757d; /* Warna ikon tombol close */
+}
+
+.btn-close:hover {
+    color: #343a40; /* Warna ikon tombol close saat hover */
+}
+
+/* Remove padding from container */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2%;
+}
+
+/* Center content in main-section */
+.main-section .container {
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.card {
+    border: 1px solid #ddd; /* Optional: Add border for card */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image is clipped if it exceeds the card size */
+    text-align: center;
+    background-color: #f8f9fa; /* Optional: Add background color */
+    padding: 5%;
+    height: 280px;
+}
+
+.card-img-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust as needed */
+    overflow: hidden; /* Ensures the image is clipped if it exceeds the container size */
+}
+
+.card-img-top img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body a {
+    display: block;
+    font-weight: bold;
+}
+
+.row .col-4 {
+    padding: 0 15px;
+}
+
+@media (max-width: 992px) {
+    .row .col-4 {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row .col-4 {
+        padding: 0 5px;
+    }
+}
+
+
+.card-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: calc(100% - 20px); /* Make buttons take up the full width minus margins */
+    justify-content: space-between; /* Ensure equal space between buttons */
+}
+
+.card-buttons button {
+    flex: 1; /* Make buttons take equal width */
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+    background-color: #D12D2D;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #6C7E46;
+    color: white;
+}
+
+.btn-delete:hover,
+.btn-edit:hover {
+    background-color: rgba(59, 56, 56, 0.7);
+}
+
+
+/* modal delete */
+/* modal delete */
+.modal-dialog {
+    max-width: 400px; /* Atur lebar maksimum modal menjadi lebih kecil */
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header img {
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.modal-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center; /* Pusatkan teks pada badan modal */
+}
+
+.modal-footer {
+    border-top: none; /* Hapus garis atas pada footer modal */
+    justify-content: center; /* Pusatkan tombol pada footer modal */
+}
+
+.modal-footer button {
+    width: 35%; /* Atur lebar tombol footer */
+    border-radius: 10px;
+}
+
+.btn-cancel {
+    background-color: #D12D2D; /* Warna latar belakang untuk tombol cancel */
+    color: #fff; /* Warna teks pada tombol cancel */
+}
+
+.btn-delete-confirm {
+    background-color: #48AA33; /* Warna latar belakang untuk tombol delete */
+    color: #fff; /* Warna teks pada tombol delete */
+}
+
+.btn-close {
+    color: #6c757d; /* Warna ikon tombol close */
+}
+
+.btn-close:hover {
+    color: #343a40; /* Warna ikon tombol close saat hover */
+}
