@@ -4,11 +4,6 @@
     background-color: #F5F1EC;
   }
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .profile-header {
     text-align: center;
     margin-bottom: 20px;
@@ -130,9 +125,10 @@
     color: black;
   }
 
-  .card {
+  .card-abc {
     border: 1px solid #dee2e6;
     border-radius: 20px;
+    margin-bottom: 20px;
   }
 
   .card-margin {
