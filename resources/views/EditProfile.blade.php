@@ -29,16 +29,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="Home">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Calorie">CALORIE</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
@@ -47,7 +44,7 @@
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="/image/picProfil.png" alt="Profile Icon"> <!-- Ganti picProfil.png dengan gambar ikon profil Anda -->
-                                <span id="profileText">Hi, <span id="usernamePlaceholder">Alicia</span></span>
+                                <span id="profileText">Hi, {{ Auth::user()->name }}<span id="usernamePlaceholder"></span></span>
                             </a>
                             <div class="dropdown-content" aria-labelledby="navbarDropdown">
                                 <!-- Isi dropdown menu dengan gambar ikon -->
@@ -78,16 +75,23 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-cancle shadow-lg waves-effect" data-bs-dismiss="modal">
-                                        <i class="fas fa-window-close"></i> Cancel
+                                        <i class="fas"></i> Cancel
                                     </button>
-                                    <button type="button" class="btn btn-logout shadow-lg waves-effect" onclick="logoutAndRedirect()">
-                                        <i class="fas fa-sign-out-alt"></i> Yes, Logout!
+                                    <button type="button" class="btn btn-logout shadow-lg waves-effect" onclick="logout()">
+                                        <i class="fas"></i> Yes, Logout!
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Modal Logout End -->
+
+                    <script>
+
+                        function logout() {
+                            window.location.href = "/logout";
+                        }
+                    </script>
 
                     <!-- Section Script profil -->
                     <script>
@@ -105,7 +109,10 @@
                     <!-- End Section Script profil -->
                 </ul>
             </div>
+                        
+        
     </nav>
+    
     <!-- End Section Navbar -->
 
     <div class="container">
