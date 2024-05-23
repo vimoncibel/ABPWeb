@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         DB::table('users')->insert([
-            'email' => '',
-            'username' => '',
-            'password' => Hash::make(''),
+            'email' => 'sintia@gmail.com',
+            'name' => 'sintia',
+            'password' => Hash::make('sintia123'),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
