@@ -36,7 +36,7 @@
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
+                        <a class="nav-link" href="UploadRecipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
                     <li class="nav-item active">
@@ -48,11 +48,11 @@
                             </a>
                             <div class="dropdown-content" aria-labelledby="navbarDropdown">
                                 <!-- Isi dropdown menu dengan gambar ikon -->
-                                <a class="dropdown-item" href="My Account">
+                                <a class="dropdown-item" href="Profil">
                                     <img src="/image/picMyAcc.png" alt="My Account Icon"> My Account
                                 </a>
-                                <a class="dropdown-item" href="My Recipe">
-                                    <img src="/image/picMyRecipe.png" alt="My Recipe Icon"> My Recipe
+                                <a class="dropdown-item" href="MyRecipe">
+                                    <img src="/image/picMyRecipe.png" alt="MyRecipe"> My Recipe
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <img src="/image/picLogOut.png" alt="Log Out Icon"> Log Out
@@ -181,6 +181,22 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title"><strong>Gado - Gado</strong></h5>
+                                    <p class="card-text overflow-hidden">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="button-container">
+                                        <button class="btn btn-primary btn1 me-md-2" type="button">Delete</button>
+                                        <button class="btn btn-primary btn2" type="button">Edit</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 card-margin">
+                            <div class="card card-recipe">
+                                <div class="card-img-container">
+                                    <img src="/image/ChimichurriSreak.jpeg" class="card-img-top img-fluid" alt="capcay">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"><strong>Chimichurri Sreak</strong></h5>
                                     <p class="card-text overflow-hidden">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <div class="button-container">
                                         <button class="btn btn-primary btn1 me-md-2" type="button">Delete</button>

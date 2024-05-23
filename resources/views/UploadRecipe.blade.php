@@ -44,10 +44,10 @@
                             </a>
                             <div class="dropdown-content" aria-labelledby="navbarDropdown">
                                 <!-- Isi dropdown menu dengan gambar ikon -->
-                                <a class="dropdown-item" href="My Account">
+                                <a class="dropdown-item" href="Profil">
                                     <img src="/image/picMyAcc.png" alt="My Account Icon"> My Account
                                 </a>
-                                <a class="dropdown-item" href="My Recipe">
+                                <a class="dropdown-item" href="MyRecipe">
                                     <img src="/image/picMyRecipe.png" alt="My Recipe Icon"> My Recipe
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">

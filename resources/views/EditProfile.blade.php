@@ -36,7 +36,7 @@
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
+                        <a class="nav-link" href="UploadRecipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
                     <li class="nav-item">
@@ -48,11 +48,11 @@
                             </a>
                             <div class="dropdown-content" aria-labelledby="navbarDropdown">
                                 <!-- Isi dropdown menu dengan gambar ikon -->
-                                <a class="dropdown-item" href="My Account">
+                                <a class="dropdown-item" href="Profil">
                                     <img src="/image/picMyAcc.png" alt="My Account Icon"> My Account
                                 </a>
-                                <a class="dropdown-item" href="My Recipe">
-                                    <img src="/image/picMyRecipe.png" alt="My Recipe Icon"> My Recipe
+                                <a class="dropdown-item" href="MyRecipe">
+                                    <img src="/image/picMyRecipe.png" alt="MyRecipe"> My Recipe
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <img src="/image/picLogOut.png" alt="Log Out Icon"> Log Out
