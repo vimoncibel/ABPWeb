@@ -29,9 +29,6 @@
                     <a class="nav-link" href="Home">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Recipes">USER</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="Create Recipe">CREATE RECIPE</a>
                 </li>
                 <li class="nav-item">

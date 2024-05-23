@@ -19,75 +19,72 @@
 <body>  
     <!-- Section Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light px-5">
-            <img class="navbar-brand" src="/image/brand.png" alt="Brand Image">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Recipes">USER</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Create Your Recipe">CREATE RECIPE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Create Your Recipe">LOGOUT</a>
-                    </li>
+        <img class="navbar-brand" src="/image/brand.png" alt="Brand Image">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item >
+                    <a class="nav-link" href="Home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Create Recipe">CREATE RECIPE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logoutModal" data-bs-toggle="modal">LOGOUT</a>
+                </li>
 
-                    <!-- Modal Logout Start -->
-                    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content shadow-lg">
-                                <div class="modal-header bg-gray-200">
-                                    <img src="/image/picLogout2.png" alt="Log Out 2 Icon">
-                                    <h5 class="modal-title text-xm font-weight-bold" id="logoutModalLabel">LOGOUT!</h5>
-                                </div>
-                                <div class="modal-body">
-                                    Are you sure you want to logout? </br>
-                                    Once you logout you need to login again. Are you Ok?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-cancle shadow-lg waves-effect" data-bs-dismiss="modal">
-                                        <i class="fas"></i> Cancel
-                                    </button>
-                                    <button type="button" class="btn btn-logout shadow-lg waves-effect" onclick="logout()">
-                                        <i class="fas"></i> Yes, Logout!
-                                    </button>
-                                </div>
+                <!-- Modal Logout Start -->
+                <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content shadow-lg">
+                            <div class="modal-header bg-gray-200">
+                                <img src="/image/picLogout2.png" alt="Log Out 2 Icon">
+                                <h5 class="modal-title text-xm font-weight-bold" id="logoutModalLabel">LOGOUT!</h5>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to logout? </br>
+                                Once you logout you need to login again. Are you Ok?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-cancle shadow-lg waves-effect" data-bs-dismiss="modal">
+                                    <i class="fas"></i> Cancel
+                                </button>
+                                <button type="button" class="btn btn-logout shadow-lg waves-effect" onclick="logout()">
+                                    <i class="fas"></i> Yes, Logout!
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <!-- Modal Logout End -->
+                </div>
+                <!-- Modal Logout End -->
 
-                    <script>
+                <script>
 
-                        function logout() {
-                            window.location.href = "/logout";
+                    function logout() {
+                        window.location.href = "/logout";
+                    }
+                </script>
+
+                <!-- Section Script profil -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Mendapatkan nama pengguna dari data yang telah disimpan saat registrasi
+                        var username = localStorage.getItem("username"); // Anda harus mengatur "username" setelah proses registrasi
+                    
+                        // Memperbarui teks nama pengguna di profil jika nama pengguna tersedia
+                        if (username) {
+                            var usernamePlaceholder = document.getElementById("usernamePlaceholder");
+                            usernamePlaceholder.textContent = username;
                         }
-                    </script>
-
-                    <!-- Section Script profil -->
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            // Mendapatkan nama pengguna dari data yang telah disimpan saat registrasi
-                            var username = localStorage.getItem("username"); // Anda harus mengatur "username" setelah proses registrasi
-                        
-                            // Memperbarui teks nama pengguna di profil jika nama pengguna tersedia
-                            if (username) {
-                                var usernamePlaceholder = document.getElementById("usernamePlaceholder");
-                                usernamePlaceholder.textContent = username;
-                            }
-                        });
-                    </script>
-                    <!-- End Section Script profil -->
-                </ul>
-            </div>
-                        
-        
+                    });
+                </script>
+                <!-- End Section Script profil -->
+            </ul>
+        </div>
+                    
+    
     </nav>
     <!-- End Section Navbar -->
 
