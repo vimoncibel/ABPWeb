@@ -1,0 +1,49 @@
+/* Profile */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 4%;
+}
+
+body {
+    background-color: #F5F1EC;
+}
+
+.profile-details {
+    background-color: #EEE7E7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    /* Ubah ukuran lebar sesuai keinginan Anda */
+    height: 175px;
+    /* Ubah ukuran tinggi sesuai keinginan Anda */
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.profile-details a {
+    display: flex;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.profile-details a.active {
+    background-color: #F5F1EC;
+    color: black;
+}
+
+.profile-details a:hover:not(.active) {
+    background-color: #F5F1EC;
+    color: black;
+}
+
+.input-custom {
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+}
+
+
+

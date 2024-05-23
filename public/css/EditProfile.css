@@ -1,0 +1,91 @@
+/* Profile */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 4%;
+}
+
+body {
+    background-color: #F5F1EC;
+}
+
+.profile-details {
+    background-color: #EEE7E7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    /* Ubah ukuran lebar sesuai keinginan Anda */
+    height: 175px;
+    /* Ubah ukuran tinggi sesuai keinginan Anda */
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.profile-details a {
+    display: flex;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.profile-details a.active {
+    background-color: #F5F1EC;
+    color: black;
+}
+
+.profile-details a:hover:not(.active) {
+    background-color: #F5F1EC;
+    color: black;
+}
+
+.input-custom {
+    border: 1px solid #ABABAB;
+    /* Warna border input */
+    border-radius: 10px;
+    /* Melengkungkan sudut input */
+    padding: 5px 10px;
+    /* Menambahkan ruang padding agar input lebih terlihat */
+}
+
+
+/*editprofil*/
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .form-control {
+    padding-right: 40px;
+    /* Menambahkan ruang untuk ikon di dalam input */
+}
+
+.input-with-icon .input-icon {
+    position: absolute;
+    right: 10px;
+    /* Menempatkan ikon di sisi kanan input */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Mengatur z-index agar ikon tampil di atas input */
+}
+
+.btn-save {
+    background-color: #6C7E46;
+    /* Mengubah warna latar belakang tombol */
+    color: white;
+    /* Mengubah warna teks tombol */
+    width: 120px;
+    border-radius: 10px;
+    /* Menambahkan lengkungan pada tombol */
+}
+
+.btn-save:hover {
+    background-color: #98b367; /* Warna latar belakang tombol saat hover */
+}
+
+.float-right {
+    float: right;
+    /* Mengatur tombol ke sebelah kanan */
+}

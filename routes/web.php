@@ -86,3 +86,4 @@ Route::post('/login', function (Request $request) {
 
 
 Route::post('/signup', [AuthController::class, 'register'])->name('register.submit');
+
