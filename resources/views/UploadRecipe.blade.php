@@ -32,7 +32,7 @@
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
+                        <a class="nav-link" href="UploadRecipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
                     <li class="nav-item">

@@ -31,7 +31,7 @@
                         <a class="nav-link" href="Recipes">RECIPES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Create Your Recipe">CREATE YOUR RECIPE</a>
+                        <a class="nav-link" href="UploadRecipe">CREATE YOUR RECIPE</a>
                     </li>
                     <!-- Baru Ditambahin -->
                     <li class="nav-item">
@@ -121,7 +121,7 @@
 
 
     <!-- Section Filter Recipe -->
-    <div class="container">
+    <div class="container menu">
         <div class="row">
             <div class="col-sm-3 SideBar">
                 <h3><strong>Filter By</strong></h3>
